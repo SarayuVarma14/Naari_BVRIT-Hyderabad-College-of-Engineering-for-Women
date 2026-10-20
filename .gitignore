@@ -1,0 +1,19 @@
+# Local application data and uploads
+naari.db
+naari.db-*
+uploads/
+.env
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,38 @@
+{
+  "task": "P(CGM glucose > 180 mg/dL within next 120 min | glucose <= 180 now)",
+  "data": "SYNTHETIC (naari/synth.py, seed 7). Not clinical validation.",
+  "split": "grouped by patient: 30 train / 10 test patients",
+  "baseline_logreg_last_glucose": {
+    "auroc": 0.4612,
+    "auprc": 0.1391,
+    "recall": 0.0,
+    "precision": 0.0,
+    "brier": 0.1381,
+    "prevalence": 0.1642,
+    "n": 6022
+  },
+  "gradient_boosting": {
+    "auroc": 0.9775,
+    "auprc": 0.889,
+    "recall": 0.7361,
+    "precision": 0.8575,
+    "brier": 0.0461,
+    "prevalence": 0.1642,
+    "n": 6022
+  },
+  "features": [
+    "g_last",
+    "g_mean",
+    "g_std",
+    "g_min",
+    "g_max",
+    "g_delta15",
+    "g_slope",
+    "hr_mean",
+    "steps_sum",
+    "hour_sin",
+    "hour_cos",
+    "hba1c"
+  ],
+  "model_version": "gb-0.1-synthetic"
+}

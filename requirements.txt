@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+joblib
+pdfplumber
+pytesseract
+Pillow
+reportlab
+# system package for scanned reports/images: tesseract-ocr
